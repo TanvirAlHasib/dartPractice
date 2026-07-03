@@ -9,6 +9,10 @@ abstract class Person {
 
 class Student extends Person{
 
+  Student(){
+    print("===== Student Information Manager =====\n\n");
+  }  
+
   List<String> _studentList = [];
 
   @override
@@ -45,7 +49,6 @@ class Student extends Person{
 void main() {
   Person student = Student();
 
-  print("===== Student Information Manager =====\n\n");
   while(true){
     print("1. Add Student");
     print("2. View Students");
